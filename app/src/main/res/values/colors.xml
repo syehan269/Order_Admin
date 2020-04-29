@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#1b1b1b</color>
+
+    <color name="primaryLightColor">#718792</color>
+    <color name="secondaryColor">#37474f</color>
+    <color name="secondaryLightColor">#62727b</color>
+    <color name="secondaryDarkColor">#102027</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000</color>
+
+    <color name="colorAccent">#CFCFCF</color>
+    <color name="black">#000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="back">#EEEEEE</color>
+    <color name="background">#D6D6D6</color>
+    <color name="undone">#E23636</color>
+    <color name="btn_back1">#39FFFFFF</color>
+    <color name="color_1">#99CACACA</color>
+    <color name="back_login">#FC383838</color>
+    <color name="font_detail">#3F3F3F</color>
+    <color name="done">#00C853</color>
+    <color name="handled">#FF6D00</color>
+
+</resources>

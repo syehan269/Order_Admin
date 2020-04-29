@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view_user">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppTheme"
+            app:titleTextColor="@color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/RL_detail_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Information"
+                android:textSize="17sp"
+                android:textColor="@color/font_detail"
+                android:layout_margin="@dimen/margin_global"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/RL_detail_top"
+            android:id="@+id/RL_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/RL_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sekunder"
+                android:layout_marginTop="@dimen/card_elevation"
+                android:layout_marginEnd="@dimen/margin_sekunder"
+                android:layout_marginBottom="@dimen/card_elevation">
+
+                <ImageView
+                    android:id="@+id/IV_name"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:layout_marginBottom="@dimen/card_elevation"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/baseline_person_black_48dp"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/IV_name"
+                    android:id="@+id/TV_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:text="Name"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/IV_name"
+                    android:id="@+id/TV_detail_name"
+                    android:layout_below="@+id/TV_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_adm_USR"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/card_elevation"
+                    android:text="name here"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_below="@+id/RL_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/separator_line" />
+
+            <RelativeLayout
+                android:layout_below="@+id/RL_detail_name"
+                android:id="@+id/RL_detail_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sekunder"
+                android:layout_marginTop="@dimen/card_elevation"
+                android:layout_marginEnd="@dimen/margin_sekunder"
+                android:layout_marginBottom="@dimen/card_elevation">
+
+                <ImageView
+                    android:id="@+id/IV_email"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:layout_marginBottom="@dimen/card_elevation"
+                    android:layout_marginEnd="@dimen/margin_sekunder"
+                    android:src="@drawable/baseline_mail_black_48dp"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/IV_email"
+                    android:id="@+id/TV_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:textStyle="bold"
+                    android:text="Email"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/IV_email"
+                    android:id="@+id/TV_detail_email"
+                    android:layout_below="@+id/TV_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:textSize="@dimen/font_adm_USR"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/card_elevation"
+                    android:text="email here"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_below="@+id/RL_detail_depart"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/separator_line" />
+
+            <RelativeLayout
+                android:layout_below="@+id/RL_detail_email"
+                android:id="@+id/RL_detail_depart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sekunder"
+                android:layout_marginTop="@dimen/card_elevation"
+                android:layout_marginEnd="@dimen/margin_sekunder"
+                android:layout_marginBottom="@dimen/card_elevation">
+
+                <ImageView
+                    android:id="@+id/IV_depart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:layout_marginBottom="@dimen/card_elevation"
+                    android:layout_marginEnd="@dimen/margin_sekunder"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/outline_security_black_48dp"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/IV_depart"
+                    android:id="@+id/TV_depart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:textStyle="bold"
+                    android:text="Department"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/IV_depart"
+                    android:id="@+id/TV_detail_depart"
+                    android:layout_below="@+id/TV_depart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:textSize="@dimen/font_adm_USR"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/card_elevation"
+                    android:text="depart here"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_below="@+id/RL_detail_email"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/separator_line" />
+
+            <RelativeLayout
+                android:layout_below="@+id/RL_detail_depart"
+                android:id="@+id/RL_detail_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sekunder"
+                android:layout_marginTop="@dimen/card_elevation"
+                android:layout_marginEnd="@dimen/margin_sekunder"
+                android:layout_marginBottom="@dimen/card_elevation">
+
+                <ImageView
+                    android:id="@+id/IV_level"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:layout_marginBottom="@dimen/card_elevation"
+                    android:layout_marginEnd="@dimen/margin_sekunder"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_account_box_black_48dp"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/IV_level"
+                    android:id="@+id/TV_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:text="Level"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/IV_level"
+                    android:id="@+id/TV_detail_level"
+                    android:layout_below="@+id/TV_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_adm_USR"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/card_elevation"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:text="level here"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_below="@+id/RL_detail_level"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/separator_line" />
+
+            <RelativeLayout
+                android:layout_below="@+id/RL_detail_level"
+                android:id="@+id/RL_detail_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sekunder"
+                android:layout_marginTop="@dimen/card_elevation"
+                android:layout_marginEnd="@dimen/margin_sekunder"
+                android:layout_marginBottom="@dimen/card_elevation">
+
+                <ImageView
+                    android:id="@+id/IV_pass"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:layout_marginBottom="@dimen/card_elevation"
+                    android:layout_marginEnd="@dimen/margin_sekunder"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_vpn_key_black_48dp"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/IV_pass"
+                    android:id="@+id/TV_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:textStyle="bold"
+                    android:text="Password"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/IV_pass"
+                    android:id="@+id/TV_detail_password"
+                    android:layout_below="@+id/TV_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_adm_USR"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/card_elevation"
+                    android:layout_marginTop="@dimen/card_elevation"
+                    android:text="password here"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_below="@+id/RL_detail_password"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/separator_line"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

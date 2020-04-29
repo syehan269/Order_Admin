@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.orderadm">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash_adm"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".createPDF"></activity>
+        <activity
+            android:name=".search"
+            android:parentActivityName=".manage_user" />
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".form"
+            android:parentActivityName=".manage_request" />
+        <activity
+            android:name=".preview_request"
+            android:parentActivityName=".manage_request" />
+        <activity
+            android:name=".view_user"
+            android:parentActivityName=".manage_user" />
+        <activity
+            android:name=".update_user"
+            android:parentActivityName=".manage_user" />
+        <activity
+            android:name=".register"
+            android:parentActivityName=".manage_user" />
+        <activity
+            android:name=".manage_depart"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".manage_request"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".manage_user"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".forget"
+            android:parentActivityName=".login" />
+        <activity android:name=".login" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+<!--
+        <provider
+            android:authorities="ehre.dev.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATH"
+                android:resource="?xml/provider_path"/>
+
+        </provider>
+-->
+    </application>
+
+</manifest>

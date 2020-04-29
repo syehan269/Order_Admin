@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardBackgroundColor="@color/white"
+    style="@style/Widget.MaterialComponents.CardView"
+    android:id="@+id/CV_recycler"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_global"
+        android:id="@+id/main_list">
+
+        <RelativeLayout
+            android:id="@+id/RL_view_depart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_elevation"
+            android:layout_marginEnd="@dimen/card_elevation">
+
+            <ImageView
+                android:id="@+id/depart_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_assessment_black_48dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/card_elevation"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:contentDescription="TODO"/>
+
+            <TextView
+                android:id="@+id/Tv_Departement_hit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/depart_view"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:text="Departement"
+                android:layout_margin="@dimen/margin_global"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/status_handle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:tint="@color/handled"
+                android:layout_margin="@dimen/margin_global"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LN_RV_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_global"
+            android:layout_marginStart="@dimen/margin_global"
+            android:layout_marginTop="@dimen/card_elevation"
+            android:layout_below="@id/RL_view_depart"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Tv_Title_hit"
+                android:layout_width="200dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:text="Subject"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Approve_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:text="Status"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

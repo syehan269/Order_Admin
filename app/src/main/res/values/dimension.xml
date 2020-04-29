@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="form_textInput">10dp</dimen>
+    <dimen name="margin_global">10dp</dimen>
+    <dimen name="margin_sekunder">15dp</dimen>
+    <dimen name="margin_type_20">20dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="font_adm_USR">16sp</dimen>
+
+</resources>

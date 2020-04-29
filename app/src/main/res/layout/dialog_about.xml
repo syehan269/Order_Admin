@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_sekunder"
+        android:layout_marginEnd="@dimen/margin_sekunder"
+        android:layout_marginTop="@dimen/margin_sekunder"
+        android:layout_marginBottom="@dimen/margin_global"
+        android:text="About"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/folder"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_sekunder"
+        android:layout_marginEnd="@dimen/margin_sekunder"
+        android:layout_marginTop="@dimen/margin_sekunder"
+        android:layout_marginBottom="@dimen/margin_global"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Public Order"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_sekunder"
+        android:layout_marginEnd="@dimen/margin_sekunder"
+        android:layout_marginTop="@dimen/margin_global"
+        android:layout_marginBottom="@dimen/margin_sekunder"
+        android:textAlignment="center"/>
+
+</LinearLayout>

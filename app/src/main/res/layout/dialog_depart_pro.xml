@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request to"
+        android:layout_marginStart="@dimen/margin_sekunder"
+        android:layout_marginTop="@dimen/margin_sekunder"
+        android:layout_marginBottom="@dimen/margin_sekunder"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RV_depart_pro"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/card_elevation"
+            android:layout_marginBottom="@dimen/card_elevation"
+            android:layout_marginEnd="@dimen/margin_sekunder"
+            android:layout_marginStart="@dimen/margin_sekunder"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

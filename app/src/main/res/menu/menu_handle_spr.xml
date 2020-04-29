@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/avial"
+        android:title="Incomplete"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/approve"
+        android:title="Approve"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/disapprove"
+        android:title="Disapprove"
+        app:showAsAction="never"/>
+
+</menu>

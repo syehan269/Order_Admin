@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/TV_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Warning"
+        android:layout_marginStart="@dimen/margin_sekunder"
+        android:layout_marginTop="@dimen/margin_sekunder"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/TV_body"
+        android:layout_below="@+id/TV_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_global"
+        android:layout_marginStart="@dimen/margin_sekunder"
+        android:layout_marginEnd="@dimen/margin_sekunder"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_adm_USR"
+        android:text="Please select following node below."/>
+
+    <TextView
+        android:id="@+id/TV_warning"
+        android:layout_below="@+id/TV_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/undone"
+        android:layout_marginTop="@dimen/card_elevation"
+        android:layout_marginStart="@dimen/margin_sekunder"
+        android:layout_marginEnd="@dimen/margin_sekunder"
+        android:textStyle="bold"
+        android:text="Warning: you can't recover the node after delete it."/>
+
+    <RelativeLayout
+        android:layout_below="@+id/TV_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_sekunder"
+        android:layout_marginStart="@dimen/margin_sekunder"
+        android:layout_marginTop="@dimen/margin_global">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/CB_nuke_user"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Users"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_below="@+id/CB_nuke_user"
+            android:id="@+id/CB_nuke_request"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_below="@id/CB_nuke_request"
+            android:id="@+id/CB_nuke_queue"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="queue"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

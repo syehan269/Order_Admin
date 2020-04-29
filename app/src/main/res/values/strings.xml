@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">Admin</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="input_name_Error">Fill the field !</string>
+    <string name="input_descripton">Fill the field !</string>
+    <string name="menu">&#8942;</string>
+    <string name="level">LEVEL</string>
+    <string name="depart">Departement</string>
+    <string name="forget_text">Enter your e-mail below to reset your password</string>
+    <string name="status_YES">Request complete</string>
+    <string name="status_NO">Request incomplete</string>
+    <string name="approval_NO">Request approved</string>
+    <string name="approval_YES">Request disapproved</string>
+    <string name="msg_token">FMC: %s</string>
+    <array name="account_type">
+        <item>Admin</item>
+        <item>Super User</item>
+        <item>User</item>
+    </array>
+
+</resources>

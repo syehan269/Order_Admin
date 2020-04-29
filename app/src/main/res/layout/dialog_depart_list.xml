@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Department"
+        android:layout_marginStart="@dimen/margin_sekunder"
+        android:layout_marginTop="@dimen/margin_sekunder"
+        android:layout_marginBottom="@dimen/margin_sekunder"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/Radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_sekunder"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_hrga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HR-GA"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Administration"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_fin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finance-Accounting"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_pri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Primary"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Secondary"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_mar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marketing"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_it"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IT"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_security"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Principal"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_sickbay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sickbay"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_secretary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Secretary"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Library"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_mainten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maintenance"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_lab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laboratory"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/RB_Garden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gardener"/>
+
+        </RadioGroup>
+
+    </ScrollView>
+
+</LinearLayout>

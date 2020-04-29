@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="string resource"
+    android:hint="Search here"
+    android:searchMode="queryRewriteFromData|queryRewriteFromText"
+    android:searchButtonText="Search"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:inputType="text">
+
+    <actionkey
+        android:keycode="KEYCODE_0"
+        android:queryActionMsg="Now"
+        android:suggestActionMsg="Bruh"/>
+
+</searchable>
